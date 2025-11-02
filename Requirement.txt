@@ -1,0 +1,6 @@
+Python: 3.10.18 
+PennyLane: 0.42.3
+Pandas: 2.3.2
+yfinance: 0.2.66
+Matplotlib: 3.10.6
+NetworkX: 3.4.2
