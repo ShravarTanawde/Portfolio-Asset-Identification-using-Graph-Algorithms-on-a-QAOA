@@ -20,7 +20,7 @@ My project builds on this concept by:
 - Translating the model into an **Ising Hamiltonian** suitable for **QAOA**.  
 - Implementing QAOA using **PennyLane's statevector simulator** and **Adam Optimizer** for classical parameter optimization.  
 - Comparing the observed behavior with expectations from quantum annealing results.
-- Applying various methodologies such as warm start, random restarts, etc, to improve the solution.
+- Improving scalability by using Lovain Clustering.
 
 This work aims to utilize QAOA as an accessible alternative to hardware-based quantum annealers for solving QUBO/Ising models.
 
@@ -36,4 +36,4 @@ Please refer to the *project report* for details.
 
 ## Result and Future Study
 
-After multiple attempts to improve the solution, I have yet to achieve a satisfactory result. Due to the fundamental nature of the QAOA approach to solving QUBO problems, it is challenging to obtain a result of similar quality to that which can be obtained from a quantum annealer; however, there are ways to further optimize it. This is what I will look into to improve accuracy in the future.
+Results achieved for smaller 12 node graph were satisfactory. Increasing the number of nodes to 25 proved challenging due to lack of computattional resources. This was resolved using graph clustering algorithm to divide the number of nodes, which gave satisfactory result. However simple graph clustering by itself is insufficent when graph and it's edge density increases. Looking into solution for this problem should be a part of future study.  
